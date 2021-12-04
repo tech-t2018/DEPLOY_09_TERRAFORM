@@ -50,9 +50,10 @@ Create the following resources in AWS using the latest Terraform version (do not
 
 Be sure to include the following below in your pull request: 
 
-***Requirements:*** 
+## Requirements
+- [x]Add all Terraform files to the pull request.
 - [x]Document the process, issues and anything you decided to do differently.
 - [x]Screenshot samples of your infrastucture from AWS and include in your PR.
-- [x]Add all Terraform files to the pull request.
+- [x] DO NOT upload the `terraform.tfstate` file to the repo (it should be ignored by default)
 
 ![image](https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/terraform-x-aws-1.png)
