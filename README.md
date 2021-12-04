@@ -47,7 +47,8 @@ Create the following resources in AWS using the latest Terraform version (do not
  * Ingress: allow traffic to its port from the EC2 security group
 3. Create a DB subnet group for the RDS consisting of the 2 internal subnets
 
-- Be sure to include the following below in your pull request: 
+
+Be sure to include the following below in your pull request: 
 
 ***Requirements:*** 
 - [x]Document the process, issues and anything you decided to do differently.
