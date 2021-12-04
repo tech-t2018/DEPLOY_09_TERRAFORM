@@ -9,10 +9,10 @@ Create the following resources in AWS using the latest Terraform version (do not
 
 ## Part 1 - VPC
 1. Create a new VPC with:
- * 5 subnets (2 public, 1 private, 2 internal)
- * 2 route tables (public & private)
- * an Internet Gateway
- * and 1 NAT Gateway (in 1 of the private subnets)
+- [ ] 5 subnets (2 public, 1 private, 2 internal)
+- [ ] 2 route tables (public & private)
+- [ ] an Internet Gateway
+- [ ] and 1 NAT Gateway (in 1 of the private subnets)
 
 2. Subnets are defined as:
  * Public - route to Internet Gateway (for any ipv4 address)
@@ -23,17 +23,17 @@ Create the following resources in AWS using the latest Terraform version (do not
 
 ## Part 2 - EC2
 1. Create 1 EC2 instance in the private subnet with:
- * An Ubuntu AMI (version of your choosing)
- * Instance type/size, tags, and other settings of your choosing
+- [ ] An Ubuntu AMI (version of your choosing)
+- [ ] Instance type/size, tags, and other settings of your choosing
 2. Create a security group for the EC2 with the following rules:
- * Ingress: allow port 80 traffic from the ALB security group
- * Egress: allow all outbound traffic to any ipv4 address
+- [ ] Ingress: allow port 80 traffic from the ALB security group
+- [ ] Egress: allow all outbound traffic to any ipv4 address
 
 ## Part 3 - Application Load Balancer (ALB)
 1. Create 1 ALB in the 2 public subnets
 2. Create a security group for the ALB with the following rules:
- * Ingress: allows only port 80 inbound traffic from any ipv4 address
- * Egress: allow only port 80 outbound traffic to the EC2 security group
+- [ ] Ingress: allows only port 80 inbound traffic from any ipv4 address
+- [ ] Egress: allow only port 80 outbound traffic to the EC2 security group
 3. Create a target group and add the EC2 instance to the group
 4. Create an ALB listener that forwards traffic to the target group
 
@@ -41,10 +41,10 @@ Create the following resources in AWS using the latest Terraform version (do not
 
 ## Part 4 - RDS
 1. Create 1 PostgreSQL RDS instance
- * Make it multi-az
- * Name, instance type/size, tags, db username/password, and other settings of your choosing
+- [ ] Make it multi-az
+- [ ] Name, instance type/size, tags, db username/password, and other settings of your choosing
 2. Create a security group for the RDS with the following rule:
- * Ingress: allow traffic to its port from the EC2 security group
+- [ ] Ingress: allow traffic to its port from the EC2 security group
 3. Create a DB subnet group for the RDS consisting of the 2 internal subnets
 
 
