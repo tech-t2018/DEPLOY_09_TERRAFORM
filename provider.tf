@@ -13,7 +13,7 @@ provider "aws" {
   default_tags {
     tags = {
       Deployment = "DEPLOYMENT_09_TERRAFORM"
-      Business   = "Kura Labs"
+      Team       = "Kura Labs"
     }
   }
 }
