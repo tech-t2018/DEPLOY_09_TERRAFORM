@@ -52,4 +52,4 @@ Create the following resources in AWS using the latest Terraform version (do not
 - [x]Screenshot samples of your infrastucture from AWS and include in your PR.
 - [x]Add all Terraform files to the pull request.
 
-![image](https://devops4solutions.com/wp-content/uploads/2020/09/Dockerpublish.png)
+![image](https://avatars.githubusercontent.com/u/31414033?s=280&v=4)
