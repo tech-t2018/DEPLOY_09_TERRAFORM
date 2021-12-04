@@ -18,6 +18,7 @@ Create the following resources in AWS using the latest Terraform version (do not
  * Public - route to Internet Gateway (for any ipv4 address)
  * Private - route to NAT Gateway (for any ipv4 address)
  * Internal - do not associate any route table in Terraform (main/default route table will be associated by default which only has a route to the local/private network)
+
 **Note**: You can decide which network range to use.
 
 ## Part 2 - EC2
@@ -35,6 +36,7 @@ Create the following resources in AWS using the latest Terraform version (do not
  * Egress: allow only port 80 outbound traffic to the EC2 security group
 3. Create a target group and add the EC2 instance to the group
 4. Create an ALB listener that forwards traffic to the target group
+
 **Note**: for this exercise the ALB is not accepting HTTPS traffic, only HTTP
 
 ## Part 4 - RDS
