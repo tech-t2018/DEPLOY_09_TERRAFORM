@@ -24,7 +24,7 @@ Create the following resources in AWS using the latest Terraform version (do not
 ## Part 2 - EC2
 1. Create 1 EC2 instance in the private subnet with:
   * An Ubuntu AMI (version of your choosing)
-  * nstance type/size, tags, and other settings of your choosing
+  * Instance type/size, tags, and other settings of your choosing
 2. Create a security group for the EC2 with the following rules:
   * Ingress: allow port 80 traffic from the ALB security group
   * Egress: allow all outbound traffic to any ipv4 address
